@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <style>
+        body {
+            position: absolute;
+            top: 5%;
+            left: 41%;
+        }
+
+        div {
+            border: 2px solid green;
+            margin: 2px;
+            width: 98%;
+            height: 98%;
+        }
+
+        .slotbox {
+            height: 256px;
+            width: 256px;
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            grid-template-rows: repeat(3, 80px);
+            gap: 5px;
+
+        }
+
+        .slotbox2 {
+            height: 341px;
+            width: 256px;
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            grid-template-rows: repeat(4, 80px);
+            gap: 5px;
+            margin-bottom: 50px;
+        }
+
+        .header {
+            font-size: 200%;
+            width: 256px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace
+        }
+
+        .slot {
+            font-size: 360%;
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        Must haves: Lage en 3x3 grid, lage items, få inventory til å åpne og lukke
+        Nice to haves: Full inventory melding
+    -->
+
+    <div class="header">Items</div>
+    <div class="slotbox2">
+        <div class="slot" id="item1" onclick="">📦</div>
+        <div class="slot" id="item2" onclick="">☎️</div>
+        <div class="slot" id="item3" onclick="">🎸</div>
+        <div class="slot" id="item4" onclick="">⚗️</div>
+        <div class="slot" id="item5" onclick="">💎</div>
+        <div class="slot" id="item6" onclick="">💉</div>
+        <div class="slot" id="item7" onclick="">🪗</div>
+        <div class="slot" id="item8" onclick="">🎺</div>
+        <div class="slot" id="item9" onclick="">🪕</div>
+        <div class="slot" id="item10" onclick="">🪠</div>
+        <div class="slot" id="item11" onclick="">🚽</div>
+        <div class="slot" id="item12" onclick="">🛡️</div>
+    </div>
+    <div class="header" onclick="showInventory()">Inventory</div>
+    <div id="inventory" class="slotbox">
+        <div class="slot" id="inv1" onclick=""></div>
+        <div class="slot" id="inv2" onclick=""></div>
+        <div class="slot" id="inv3" onclick=""></div>
+        <div class="slot" id="inv4" onclick=""></div>
+        <div class="slot" id="inv5" onclick=""></div>
+        <div class="slot" id="inv6" onclick=""></div>
+        <div class="slot" id="inv7" onclick=""></div>
+        <div class="slot" id="inv8" onclick=""></div>
+        <div class="slot" id="inv9" onclick=""></div>
+    </div>
+    <script>
+        function showInventory() {
+            
+              
+            }
+
+
+             function toggle_visibility(inventory)
+              {  var inventoryItems = document.getElementById("inventory");
+                if (inventoryItems.style.display == `block`)
+                    inventoryItems.style.display = `none`;
+                else
+                inventoryItems.style.display=`block`;
+
+        }
+
+    </script>
+</body>
+
+</html>
